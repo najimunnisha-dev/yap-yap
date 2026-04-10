@@ -1,0 +1,331 @@
+:root {
+    --bg-dark: linear-gradient(to right, #0F0F0F, #1A1A2E);
+    --bg-light: linear-gradient(to right, #F5F7FA, #E4E8F0);
+
+    --text-dark: #E6D9F2;
+    --text-light: #222;
+
+    --card-dark: rgba(255, 255, 255, 0.05);
+    --card-light: rgba(255, 255, 255, 0.8);
+}
+
+.main-container.dark {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.main-container.light {
+    background: var(--bg-light);
+    color: var(--text-light);
+}
+
+/* Reset + full screen */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0F0F0F, #1A1A2E);
+}
+
+/* Wrapper */
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left panel */
+.left-panel {
+    flex: 0.8;
+    color: #E6D9F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+.left-panel h1 {
+    margin-bottom: 10px;
+    white-space: nowrap;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    background: linear-gradient(45deg, #B497D6, #E6D9F2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 10px rgba(180,151,214,0.6),
+                 0 0 25px rgba(180,151,214,0.4);
+
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+/* Slogan */
+.left-panel p {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #CBB6E3;
+    opacity: 0.9;
+}
+
+/* Right panel */
+.right-panel {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Login container */
+.login-container {
+    width: 350px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    border: 1px solid rgba(180,151,214,0.2);
+}
+
+.main-container.dark .login-container {
+    background: var(--card-dark);
+}
+
+.main-container.light .login-container {
+    background: var(--card-light);
+    color: #222;
+}
+
+/* Heading */
+.login-container h3 {
+    color: #B497D6;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+
+    border-radius: 10px;
+    border: 1px solid #2A2A3D;
+
+    background: #141420;
+    color: #EDEDED;
+
+    outline: none;
+    font-size: 14px;
+
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.main-container.light input {
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.main-container.dark input {
+    background: #141420;
+    color: #fff;
+}
+
+/* Input focus glow */
+.login-container input:focus {
+    border-color: #B497D6;
+    box-shadow: 0 0 15px rgba(180,151,214,0.4);
+}
+
+/* Placeholder */
+.login-container input::placeholder {
+    color: #888;
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(45deg, #5B2C83, #B497D6);
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button {
+    min-height: 44px; /* mobile touch standard */
+}
+
+.login-container button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(180,151,214,0.6);
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-toggle button {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+    background: linear-gradient(45deg, #5B2C83, #B497D6);
+    color: white;
+}
+
+/* Text */
+.login-container p {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #CBB6E3;
+}
+
+/* Link */
+a {
+    color: #B497D6;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Underline animation */
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #B497D6;
+    transition: 0.3s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* ================= EXTRA SMALL DEVICES ================= */
+@media (max-width: 480px) {
+
+    .left-panel {
+        height: 30vh;
+    }
+
+    .left-panel h1 {
+        font-size: 36px;
+    }
+
+    .login-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .login-container h3 {
+        font-size: 18px;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    /* LEFT PANEL → STICK TO TOP */
+    .left-panel {
+        flex: none;
+        width: 100%;
+        padding-top: 40px;
+
+        justify-content: flex-start;   /* 🔥 TOP ALIGN */
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-panel h1 {
+        font-size: 42px;
+        margin-bottom: 5px;
+    }
+
+    .left-panel p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    /* RIGHT PANEL */
+    .right-panel {
+        flex: none;
+        width: 100%;
+
+        justify-content: flex-start;   /* 🔥 MOVE UP */
+        align-items: center;
+
+        padding: 10px 10px 30px ;
+    }
+
+    /* LOGIN BOX → JUST BELOW TITLE */
+    .login-container {
+        width: 90%;
+        max-width: 320px;
+
+        margin-top: 10px; /* small gap from title */
+
+        padding: 25px;
+    }
+}
+
+
+/* ================= EXTRA SMALL DEVICES ================= */
+@media (max-width: 480px) {
+
+    .left-panel {
+        padding-top: 30px;
+    }
+
+    .left-panel h1 {
+        font-size: 34px;
+    }
+
+    .login-container {
+        width: 95%;
+        padding: 20px;
+    }
+}

@@ -4,15 +4,141 @@
       "name": "Naji",
       "email": "naji@gmail.com",
       "password": "123",
-      "id": "1"
+      "id": "1",
+      "online": false,
+      "lastSeen": "2026-04-25T05:59:24.483Z"
     },
     {
       "name": "Murugu",
       "email": "murugu@gmail.com",
       "password": "123",
-      "id": "f-_v3pH28hg"
+      "id": "f-_v3pH28hg",
+      "online": false,
+      "lastSeen": "2026-04-25T06:01:13.669Z"
+    },
+    {
+      "name": "Hari",
+      "email": "hari@gmail.com",
+      "password": "234",
+      "id": "6O6NsZyMhdc",
+      "online": false,
+      "lastSeen": "2026-04-25T05:33:46.237Z"
+    },
+    {
+      "name": "Nivi",
+      "email": "nivi@gmail.com",
+      "password": "234",
+      "id": "53KSJOp-mK8",
+      "online": false,
+      "lastSeen": "2026-04-25T05:45:47.200Z"
     }
   ],
-  "messages": [],
+  "messages": [
+    {
+      "senderId": "1",
+      "receiverId": "f-_v3pH28hg",
+      "text": "hello..",
+      "timestamp": "2026-04-24T13:12:24.504Z",
+      "id": "nNBrX24I-oY"
+    },
+    {
+      "senderId": "1",
+      "receiverId": "f-_v3pH28hg",
+      "text": "dei... mopi mental",
+      "timestamp": "2026-04-24T13:15:56.544Z",
+      "id": "ex1zGq2U8Ps"
+    },
+    {
+      "senderId": "f-_v3pH28hg",
+      "receiverId": "1",
+      "text": "hiii",
+      "timestamp": "2026-04-24T13:20:18.706Z",
+      "id": "rhTCtQWcEAY"
+    },
+    {
+      "senderId": "f-_v3pH28hg",
+      "receiverId": "1",
+      "text": "hii",
+      "timestamp": "2026-04-25T04:05:48.479Z",
+      "id": "o1llCTPr4X0"
+    },
+    {
+      "senderId": "1",
+      "receiverId": "f-_v3pH28hg",
+      "text": "hello",
+      "timestamp": "2026-04-25T04:11:36.769Z",
+      "id": "8F4MqBz0mmw"
+    },
+    {
+      "senderId": "1",
+      "receiverId": "f-_v3pH28hg",
+      "text": "sdregf",
+      "timestamp": "2026-04-25T04:11:56.255Z",
+      "id": "S8MaNgd0nZ4"
+    },
+    {
+      "senderId": "1",
+      "receiverId": "f-_v3pH28hg",
+      "text": "hii",
+      "timestamp": "2026-04-25T04:25:48.986Z",
+      "id": "4D9bl7TyhEs"
+    },
+    {
+      "senderId": "53KSJOp-mK8",
+      "receiverId": "6O6NsZyMhdc",
+      "text": "hii",
+      "timestamp": "2026-04-25T04:27:00.493Z",
+      "id": "JLpQ47bTwMk"
+    },
+    {
+      "senderId": "1",
+      "receiverId": "f-_v3pH28hg",
+      "text": "hi",
+      "timestamp": "2026-04-25T05:15:03.973Z",
+      "id": "XeTGLXWHNTM"
+    },
+    {
+      "senderId": "1",
+      "receiverId": "f-_v3pH28hg",
+      "text": "hi",
+      "timestamp": "2026-04-25T05:15:18.460Z",
+      "id": "LWLysLAZ8lU"
+    },
+    {
+      "senderId": "1",
+      "receiverId": "f-_v3pH28hg",
+      "text": "mental",
+      "timestamp": "2026-04-25T05:26:41.998Z",
+      "id": "ipqweVgNuWY"
+    },
+    {
+      "senderId": "6O6NsZyMhdc",
+      "receiverId": "1",
+      "text": "hii",
+      "timestamp": "2026-04-25T05:32:38.453Z",
+      "id": "BN5Abhk81C8"
+    },
+    {
+      "senderId": "53KSJOp-mK8",
+      "receiverId": "f-_v3pH28hg",
+      "text": "yap-yap here",
+      "timestamp": "2026-04-25T05:37:35.294Z",
+      "id": "REuaTv6qhuo"
+    },
+    {
+      "senderId": "f-_v3pH28hg",
+      "receiverId": "1",
+      "text": "sottai",
+      "timestamp": "2026-04-25T06:00:57.222Z",
+      "id": "BUFRZnhhiZ0"
+    },
+    {
+      "senderId": "f-_v3pH28hg",
+      "receiverId": "1",
+      "text": "hii",
+      "timestamp": "2026-04-25T06:01:04.205Z",
+      "id": "3_nm3Vl2vAk"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

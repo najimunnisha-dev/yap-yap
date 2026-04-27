@@ -1,0 +1,146 @@
+/* ================= ROOT ================= */
+:root {
+    --bg-dark: linear-gradient(to right, #0F0F0F, #1A1A2E);
+    --bg-light: linear-gradient(to right, #F5F7FA, #E4E8F0);
+
+    --text-dark: #E6D9F2;
+    --text-light: #222;
+
+    --card-dark: rgba(255,255,255,0.05);
+    --card-light: rgba(255,255,255,0.85);
+}
+
+/* ================= CONTAINER ================= */
+.profile-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container.dark {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.profile-container.light {
+    background: var(--bg-light);
+    color: var(--text-light);
+}
+
+/* ================= HEADER ================= */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    background: linear-gradient(45deg, #5B2C83, #B497D6);
+    color: white;
+}
+
+/* ================= CARD ================= */
+.profile-card {
+    margin: auto;
+    width: 340px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+
+    backdrop-filter: blur(15px);
+    background: var(--card-dark);
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+}
+
+.profile-container.light .profile-card {
+    background: var(--card-light);
+}
+
+/* ================= IMAGE ================= */
+.profile-img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #B497D6;
+}
+
+/* ================= INPUTS ================= */
+.profile-card input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 1px solid #2A2A3D;
+
+    background: #141420;
+    color: white;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+.profile-card input:focus {
+    border-color: #B497D6;
+    box-shadow: 0 0 10px rgba(180,151,214,0.5);
+}
+
+.profile-container.light .profile-card input {
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+/* ================= FILE INPUT ================= */
+input[type="file"] {
+    margin: 10px 0;
+    color: inherit;
+}
+
+/* ================= BUTTONS ================= */
+button {
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Save */
+.save-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(45deg, #5B2C83, #B497D6);
+    color: white;
+
+    font-weight: bold;
+}
+
+.save-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(180,151,214,0.6);
+}
+
+/* Back */
+.back-btn {
+    background: rgba(255,255,255,0.1);
+    padding: 8px 12px;
+    border-radius: 50%;
+    color: white;
+}
+
+/* Theme */
+.theme-btn {
+    background: transparent;
+    font-size: 18px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 90%;
+        padding: 20px;
+    }
+}

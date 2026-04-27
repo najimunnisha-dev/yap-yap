@@ -3,10 +3,11 @@
     {
       "name": "Naji",
       "email": "naji@gmail.com",
-      "password": "123",
+      "password": "234",
       "id": "1",
       "online": false,
-      "lastSeen": "2026-04-25T05:59:24.483Z"
+      "lastSeen": "2026-04-25T06:26:44.933Z",
+      "avatar": "blob:http://localhost:5173/69828fae-5afe-4ef8-9b7d-753bf7607363"
     },
     {
       "name": "Murugu",
@@ -14,7 +15,8 @@
       "password": "123",
       "id": "f-_v3pH28hg",
       "online": false,
-      "lastSeen": "2026-04-25T06:01:13.669Z"
+      "lastSeen": "2026-04-25T06:01:13.669Z",
+      "avatar": "blob:http://localhost:5173/3dde3821-b7be-4976-8507-1b796a5774fa"
     },
     {
       "name": "Hari",
@@ -138,6 +140,13 @@
       "text": "hii",
       "timestamp": "2026-04-25T06:01:04.205Z",
       "id": "3_nm3Vl2vAk"
+    },
+    {
+      "senderId": "f-_v3pH28hg",
+      "receiverId": "6O6NsZyMhdc",
+      "text": "idiot",
+      "timestamp": "2026-04-25T06:45:25.816Z",
+      "id": "wPBjKjjGP3I"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
